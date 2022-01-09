@@ -15,7 +15,7 @@ const Post = ({ post }) => {
 
     const likeHandler = () => {
         try {
-            axios.put(`/posts/${post._id}/like`, { userId: currentUser._id })
+            axios.put(`/api/posts/${post._id}/like`, { userId: currentUser._id })
         } catch(error) {
             console.log(error)
         }
@@ -29,7 +29,7 @@ const Post = ({ post }) => {
 
     useEffect(()=> {
         const fetchUser = async () => {
-            const res = await axios.get(`/users?userId=${post.userId}`)
+            const res = await axios.get(`/api/users?userId=${post.userId}`)
             setUser(res.data)
         }
         fetchUser()
