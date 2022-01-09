@@ -5,7 +5,7 @@ import { AuthContext } from '../../context/AuthContext'
 import axios from 'axios'
 
 const Share = () => {
-    const PF = process.env.REACT_APP_PUBLIC_FOLDER
+    const PF = '/images/'
     const { user } = useContext(AuthContext)
 
     const desc = useRef()

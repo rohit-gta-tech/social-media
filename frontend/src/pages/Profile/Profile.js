@@ -8,7 +8,7 @@ import axios from 'axios'
 import { useParams } from 'react-router-dom'
 
 const Profile = () => {
-    const PF = process.env.REACT_APP_PUBLIC_FOLDER
+    const PF = '/images/'
     const [user, setUser] = useState({})
     const username = useParams().username
 

@@ -10,7 +10,7 @@ const Post = ({ post }) => {
     const [like, setLike] = useState(post.likes.length)
     const [isLiked, setIsLiked] = useState(false)
     const [user, setUser] = useState({})
-    const PF = process.env.REACT_APP_PUBLIC_FOLDER
+    const PF = '/images/'
     const { user: currentUser } = useContext(AuthContext)
 
     const likeHandler = () => {

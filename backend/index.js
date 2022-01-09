@@ -20,6 +20,10 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 
 app.use("/images", express.static(path.join(__dirname, "public/images")))
 
+// get public folder link
+
+
+
 // middleware
 
 app.use(express.json())
@@ -57,6 +61,7 @@ app.get("*", (req, res) => {
 app.get("/", (req, res) => {
     res.send("Welcome to homepage")
 })
+
 
 app.listen(process.env.PORT, ()=> {
     console.log(`Server running on PORT: ${process.env.PORT}`)

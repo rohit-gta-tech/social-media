@@ -2,7 +2,7 @@ import React from 'react'
 import './Online.css'
 
 const Online = ({ user }) => {
-    const PF = process.env.REACT_APP_PUBLIC_FOLDER
+    const PF = '/images/'
     return (
         <li className="rightbarFriend">
             <div className="rightbarProfileImgContainer">
